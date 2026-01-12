@@ -28,34 +28,34 @@ struct WebView: UIViewRepresentable {
 
 struct ContentView: View {
     
-//    var body: some View {
-//        
-//        // 사이트를 로드한다
-//        WebView(url: URL(string: "http://192.168.219.111:8443")!)
-//
-//    }
-    
     var body: some View {
         
-        VStack {
-            
-            // 웹뷰로 사이트를 로드한다
-            WebView(url: URL(string: "http://192.168.219.115:8443")!)
-            
-            Button("외부 safari 열기 1") {
-                if let url = URL(string: "https://www.apple.com") {
-                    UIApplication.shared.open(url)
-                }
-            }
-            
-            Button("외부 safari 열기 2") {
-                if let url = URL(string: "https://www.icloud.com") {
-                    UIApplication.shared.open(url)
-                }
-            }
-        }
-        
+        // 사이트를 로드한다
+        WebView(url: URL(string: "http://192.168.219.111:8443")!)
+
     }
+    
+//    var body: some View {
+//        
+//        VStack {
+//            
+//            // 웹뷰로 사이트를 로드한다
+//            WebView(url: URL(string: "http://192.168.219.115:8443")!)
+//            
+//            Button("외부 safari 열기 1") {
+//                if let url = URL(string: "https://www.apple.com") {
+//                    UIApplication.shared.open(url)
+//                }
+//            }
+//            
+//            Button("외부 safari 열기 2") {
+//                if let url = URL(string: "https://www.icloud.com") {
+//                    UIApplication.shared.open(url)
+//                }
+//            }
+//        }
+//        
+//    }
     
 }
 
